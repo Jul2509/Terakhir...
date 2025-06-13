@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Shopping Cart - Lugx Gaming</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    .cart-table {
+      margin-top: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .cart-table th, .cart-table td {
+      vertical-align: middle !important;
+    }
+
+    .cart-actions {
+      margin-top: 30px;
+    }
+
+    .total-label {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="page-transition">
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.svg" alt="" style="width: 158px;">
+            </a>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Our Shop</a></li>
+              <li><a href="product-details.html">Product Details</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="cart.html" class="active">Cart <i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Shopping Cart</h3>
+          <span class="breadcrumb"><a href="#">Home</a> > Shopping Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Keranjang Belanja</h6>
+          <h2>Item Anda</h2>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped cart-table">
+            <thead>
+              <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+                <th>Subtotal</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="cartTableBody">
+              </tbody>
+          </table>
+        </div>
+        <div class="cart-actions d-flex justify-content-between align-items-center">
+          <button class="btn btn-danger" onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+          <span class="total-label" id="totalBelanja">Total: $0.00</span>
+          <a href="shop.html" class="btn btn-primary">Lanjut Belanja</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <p>Semoga kalian menyukai web pembelanjaan kami! &nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Selamat Menikmati</a></p>
+
+            <div class="social-links mt-3">
+                <a href="https://facebook.com" target="_blank" class="mx-2"><i class="fab fa-facebook-f fa-2x text-white"></i></a>
+                <a href="https://twitter.com" target="_blank" class="mx-2"><i class="fab fa-twitter fa-2x text-white"></i></a>
+                <a href="https://youtube.com" target="_blank" class="mx-2"><i class="fab fa-youtube fa-2x text-white"></i></a>
+                <a href="https://instagram.com" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x text-white"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/cart.js"></script>
+
+  <script>
+    // Skrip yang berhubungan dengan transisi halaman
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('loaded');
+
+        // Event listener untuk semua link internal dengan class .nav-link atau A di dalam .main-nav
+        // Atau Anda bisa menargetkan semua link internal jika transisi diterapkan global
+        const internalLinks = document.querySelectorAll('a[href^="./"], a[href^="../"], a[href^="/"], a[href^="#"], a[href^="index.html"], a[href^="shop.html"], a[href^="product-details.html"], a[href^="contact.html"], a[href^="cart.html"]');
+
+        function navigateWithTransition(url) {
+            document.body.classList.remove('loaded');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Sesuaikan dengan durasi transisi CSS
+        }
+
+        internalLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Pastikan link tidak mengarah ke halaman yang sama atau hanya anchor '#'
+                if (this.href && this.href !== window.location.href && this.getAttribute('href') !== '#') {
+                    e.preventDefault(); // Mencegah perilaku default navigasi langsung
+                    navigateWithTransition(this.href);
+                } else if (this.getAttribute('href') === '#') {
+                    e.preventDefault(); // Mencegah lompatan untuk '#' yang tidak memiliki fungsi
+                    // Anda bisa menambahkan logika lain di sini, misalnya alert atau tidak melakukan apa-apa
+                    // alert('Link ini belum diimplementasikan untuk navigasi.');
+                }
+            });
+        });
+
+        // Event listener untuk link navigasi utama (misalnya Home, Our Shop, dll.)
+        const mainNavLinks = document.querySelectorAll('.main-nav .nav a');
+        mainNavLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.href && this.href !== window.location.href && this.getAttribute('href') !== '#') {
+                    e.preventDefault(); // Mencegah perilaku default navigasi langsung
+                    navigateWithTransition(this.href);
+                } else if (this.getAttribute('href') === '#') {
+                    e.preventDefault(); // Mencegah lompatan untuk '#' yang tidak memiliki fungsi
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

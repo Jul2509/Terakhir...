@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Lugx Gaming - Shop Page</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body  class="page-transition">
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.svg" alt="" style="width: 158px;">
+                    </a>
+                    <ul class="nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="shop.html" class="active">Our Shop</a></li>
+                      <li><a href="product-details.html">Product Details</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+
+                      <li><a href="contact.html">Sign In</a></li>
+                  </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Our Shop</h3>
+          <span class="breadcrumb"><a href="#">Home</a> > Our Shop</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="section trending">
+    <div class="container">
+        <ul class="trending-filter">
+            <li>
+                <a class="is_active" href="#!" data-filter="*">Show All</a>
+            </li>
+            <li>
+                <a href="#!" data-filter=".adv">Adventure</a>
+            </li>
+            <li>
+                <a href="#!" data-filter=".str">Strategy</a>
+            </li>
+            <li>
+                <a href="#!" data-filter=".rac">Racing</a>
+            </li>
+        </ul>
+        <div class="row trending-box">
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Modern Warfare® II', 24, 'FPS', 'assets/images/warfare.png', 'Modern Warfare® II adalah game FPS yang seru dan mempunyai berbagai misi.')">
+                            <img src="assets/images/warfare.png" alt="Modern Warfare® II">
+                        </a>
+                        <span class="price"><em>$36</em>$24</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">FPS</span>
+                        <h4>Modern Warfare® II</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Modern Warfare® II', 24)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Genshin Impact', 22, 'RPG', 'assets/images/genshin.png', 'Genshin Impact adalah game action RPG dunia terbuka yang populer, menawarkan eksplorasi luas dan cerita menarik.')">
+                            <img src="assets/images/genshin.png" alt="Genshin Impact">
+                        </a>
+                        <span class="price"><em>$32</em>$22</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">RPG</span>
+                        <h4>Genshin Impact</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Genshin Impact', 22)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Warframe', 30, 'FPS', 'assets/images/warframe.png', 'Warframe adalah game aksi RPG online gratis yang berlatar fiksi ilmiah.')">
+                            <img src="assets/images/warframe.png" alt="Warframe">
+                        </a>
+                        <span class="price"><em>$45</em>$30</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">FPS</span>
+                        <h4>Warframe</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Warframe', 30)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'DOTA 2', 22, 'Moba', 'assets/images/dota 2.png', 'DOTA 2 adalah game MOBA strategi tim yang sangat populer dan kompetitif.')">
+                            <img src="assets/images/dota 2.png" alt="DOTA 2">
+                        </a>
+                        <span class="price"><em>$32</em>$22</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Moba</span>
+                        <h4>DOTA 2</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'DOTA 2', 22)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'SIMS 4', 26, 'Social Life Strategy', 'assets/images/SIMS 4.png', 'SIMS 4 adalah game simulasi kehidupan di mana Anda menciptakan dan mengendalikan karakter virtual.')">
+                            <img src="assets/images/SIMS 4.png" alt="SIMS 4">
+                        </a>
+                        <span class="price"><em>$38</em>$26</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Social Life Strategy</span>
+                        <h4>SIMS 4</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'SIMS 4', 26)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'League Of Legends', 20, 'Moba', 'assets/images/leauge.jpg', 'League Of Legends adalah game MOBA tim yang populer di mana dua tim bersaing untuk menghancurkan Nexus musuh.')">
+                            <img src="assets/images/leauge.jpg" alt="League Of Legends">
+                        </a>
+                        <span class="price"><em>$30</em>$20</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Moba</span>
+                        <h4>Leauge Of Legends</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'League Of Legends', 20)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Valorant', 22, 'FPS', 'assets/images/Valorant.jpg', 'Valorant adalah game tembak-menembak taktis 5v5 berbasis karakter.')">
+                            <img src="assets/images/Valorant.jpg" alt="Valorant">
+                        </a>
+                        <span class="price"><em>$32</em>$22</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">FPS</span>
+                        <h4>Valorant</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Valorant', 22)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Assasin Creed', 22, 'Action', 'assets/images/assasin.jpg', 'Assasin Creed adalah seri game aksi petualangan yang berlatar sejarah.')">
+                            <img src="assets/images/assasin.jpg" alt="Assasin Creed">
+                        </a>
+                        <span class="price"><em>$32</em>$22</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Action</span>
+                        <h4>Assasin Creed</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Assasin Creed', 22)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Mobile Legends', 20, 'MOBA', 'assets/images/mole.jpeg', 'Mobile Legends: Bang Bang adalah game MOBA mobile populer.')">
+                            <img src="assets/images/mole.jpeg" alt="Mobile Legends">
+                        </a>
+                        <span class="price"><em>$28</em>$20</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">MOBA</span>
+                        <h4>Mobile Legends</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Mobile Legends', 20)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Roblox', 18, 'MMO', 'assets/images/roblox.jpg', 'Roblox adalah platform online di mana pengguna dapat membuat dan bermain game yang dibuat oleh pengguna lain.')">
+                            <img src="assets/images/roblox.jpg" alt="Roblox">
+                        </a>
+                        <span class="price"><em>$26</em>$18</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">MMO</span>
+                        <h4>Roblox</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Roblox', 18)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'Minecraft', 24, 'Survival', 'assets/images/menkrep.jpg', 'Minecraft adalah game sandbox yang memungkinkan pemain membangun apa pun yang mereka inginkan.')">
+                            <img src="assets/images/menkrep.jpg" alt="Minecraft">
+                        </a>
+                        <span class="price"><em>$32</em>$24</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Survival</span>
+                        <h4>Minecraft</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'Minecraft', 24)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="#" onclick="handleProductModalClick(event, 'ARK:Survival', 30, 'Survival', 'assets/images/ark.jpg', 'ARK: Survival Evolved adalah game bertahan hidup di mana pemain menjinakkan dinosaurus dan bertahan hidup di lingkungan yang keras.')">
+                            <img src="assets/images/ark.jpg" alt="ARK:Survival">
+                        </a>
+                        <span class="price"><em>$45</em>$30</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="category">Survival</span>
+                        <h4>ARK:Survival</h4>
+                        <a href="#" onclick="handleAddToCartClick(event, 'ARK:Survival', 30)"><i class="fa fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li><a href="shop.html" > &lt; </a></li>
+                    <li><a class="is_active" href="shop.html">1</a></li>
+                    <li><a href="Shop 2.html">2</a></li>
+                    <li><a href="Shop 3.html">3</a></li>
+                    <li><a href="Shop 2.html" > &gt; </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <footer>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <p>Semoga kalian menyukai web pembelanjaan kami!    <a rel="nofollow" href="https://templatemo.com" target="_blank">Selamat Menikmati</a></p>
+
+            <div class="social-links mt-3">
+                <a href="https://facebook.com" target="_blank" class="mx-2"><i class="fab fa-facebook-f fa-2x text-white"></i></a>
+                <a href="https://twitter.com" target="_blank" class="mx-2"><i class="fab fa-twitter fa-2x text-white"></i></a>
+                <a href="https://youtube.com" target="_blank" class="mx-2"><i class="fab fa-youtube fa-2x text-white"></i></a>
+                <a href="https://instagram.com" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x text-white"></i></a> </div>
+        </div>
+    </div>
+</footer>
+
+ 
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <!--transisi halaman-->
+  <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.body.classList.add('loaded'); // Ini harus membuat halaman terlihat
+  });
+
+  // ... fungsi-fungsi lain ...
+</script>
+
+ <script>
+
+  // Fungsi untuk menampilkan modal detail produk
+  // (Pastikan ini sesuai dengan modal yang Anda gunakan,
+  // terutama ID elemen di dalam modal)
+  function showProductModal(nama, harga, kategori, gambar, deskripsi) {
+      const productModalElement = document.getElementById('productModal');
+      if (!productModalElement) {
+          console.error("Elemen modal dengan ID 'productModal' tidak ditemukan.");
+          return;
+      }
+      const productModal = new bootstrap.Modal(productModalElement);
+
+      document.getElementById('modalProductImage').src = gambar;
+      document.getElementById('modalProductName').innerText = nama;
+      document.getElementById('modalProductCategory').innerText = kategori;
+      document.getElementById('modalProductPrice').innerText = `$${harga}`;
+      document.getElementById('modalProductDescription').innerText = deskripsi;
+
+      const modalAddToCartBtn = document.getElementById('modalAddToCartButton');
+      if (modalAddToCartBtn) {
+          // Pastikan onclick ini memanggil addToCart dengan parameter yang benar
+          modalAddToCartBtn.onclick = function() {
+              // Jika modal juga punya input kuantitas, Anda harus ambil nilainya di sini
+              // Misalnya: const quantity = parseInt(document.getElementById('modalQuantityInput').value);
+              addToCart(nama, harga); // Asumsi kuantitas default 1 jika tidak ada input di modal
+              productModal.hide();
+          };
+      }
+
+      productModal.show();
+  }
+
+  // Fungsi untuk menangani klik pada gambar/kartu produk untuk membuka modal
+  // (Ini kemungkinan digunakan di halaman shop.html atau index.html)
+  function handleProductModalClick(event, nama, harga, kategori, gambar, deskripsi) {
+      event.preventDefault(); // Mencegah lompatan ke atas halaman
+      showProductModal(nama, harga, kategori, gambar, deskripsi);
+  }
+
+  // Fungsi untuk menangani klik pada tombol 'Add to Cart' langsung di daftar produk (tanpa modal)
+  // Jika ada tombol 'Add to Cart' langsung di listing produk, bukan di modal.
+  // Jika tidak ada, fungsi ini tidak perlu ada atau pastikan tidak ada onclick yang memanggilnya.
+  function handleAddToCartClick(event, nama, harga) {
+      event.preventDefault(); // Mencegah perilaku default dari <a> (misalnya, navigasi halaman)
+      addToCart(nama, harga);
+  }
+
+</script>
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Detail Produk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-5">
+            <img id="modalProductImage" src="" class="img-fluid rounded" alt="Product Image">
+          </div>
+          <div class="col-md-7">
+            <h4 id="modalProductName"></h4>
+            <p><span class="badge bg-primary" id="modalProductCategory"></span></p>
+            <h5 class="text-success" id="modalProductPrice"></h5>
+            <p id="modalProductDescription"></p>
+            <button id="modalAddToCartButton" class="btn btn-primary mt-3"><i class="fa fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/cart.js"></script>
+
+  </body>
+</html>

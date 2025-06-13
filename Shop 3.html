@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <title>Lugx Gaming - Shop Page 3</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/templatemo-lugx-gaming.css" rel="stylesheet" />
+    <link href="assets/css/owl.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet">
+
+
+    </link>
+</head>
+
+<body class="page-transition">
+
+    <div class="js-preloader" id="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a class="logo" href="index.html">
+                            <img alt="" src="assets/images/logo.svg" style="width: 158px;" />
+                        </a>
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Our Shop</a></li>
+                            <li><a href="product-details.html">Product Details</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="contact.html">Sign In</a></li>
+                        </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Our Shop (Page 3)</h3>
+                    <span class="breadcrumb"><a href="#">Home</a> &gt; Our Shop &gt; Page 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section trending">
+        <div class="container">
+            <ul class="trending-filter">
+                <li>
+                    <a class="is_active" data-filter="*" href="#!">Show All</a>
+                </li>
+                <li>
+                    <a data-filter=".adv" href="#!">Adventure</a>
+                </li>
+                <li>
+                    <a data-filter=".str" href="#!">Strategy</a>
+                </li>
+                <li>
+                    <a data-filter=".rac" href="#!">Racing</a>
+                </li>
+            </ul>
+            <div class="row trending-box">
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Elden Ring', 48, 'Action RPG', 'assets/images/elden ring.jpeg', 'Elden Ring adalah game action role-playing yang berlatar di Lands Between, dunia fantasi yang luas.')">
+                                <img alt="Elden Ring" src="assets/images/elden ring.jpeg" />
+                            </a>
+                            <span class="price"><em>$65</em>$48</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action RPG</span>
+                            <h4>Elden Ring</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Elden Ring', 48)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Stardew Valley', 12, 'Simulation', 'assets/images/stardew.jpeg', 'Stardew Valley adalah game simulasi pertanian yang menenangkan.')">
+                                <img alt="Stardew Valley" src="assets/images/stardew.jpeg" />
+                            </a>
+                            <span class="price"><em>$20</em>$12</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Simulation</span>
+                            <h4>Stardew Valley</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Stardew Valley', 12)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Forza Horizon 5', 38, 'Racing', 'assets/images/forza.jpeg', 'Forza Horizon 5 adalah game balapan dunia terbuka yang berlatar di Meksiko.')">
+                                <img alt="Forza Horizon 5" src="assets/images/forza.jpeg" />
+                            </a>
+                            <span class="price"><em>$50</em>$38</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Racing</span>
+                            <h4>Forza Horizon 5</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Forza Horizon 5', 38)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Civilization VI', 25, 'Strategy', 'assets/images/civili.jpeg', 'Civilization VI adalah game strategi berbasis giliran di mana pemain membangun kerajaan.')">
+                                <img alt="Civilization VI" src="assets/images/civili.jpeg" />
+                            </a>
+                            <span class="price"><em>$40</em>$25</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Strategy</span>
+                            <h4>Civilization VI</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Civilization VI', 25)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Fall Guys', 10, 'Party', 'assets/images/fall ges.jpeg', 'Fall Guys adalah game battle royale yang mengadu 60 pemain dalam tantangan yang semakin sulit.')">
+                                <img alt="Fall Guys" src="assets/images/fall ges.jpeg" />
+                            </a>
+                            <span class="price"><em>$15</em>$10</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Party</span>
+                            <h4>Fall Guys</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Fall Guys', 10)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Hogwarts Legacy', 42, 'RPG', 'assets/images/hogwart.jpeg', 'Hogwarts Legacy adalah game RPG aksi dunia terbuka yang berlatar di dunia Harry Potter.')">
+                                <img alt="Hogwarts Legacy" src="assets/images/hogwart.jpeg" />
+                            </a>
+                            <span class="price"><em>$55</em>$42</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">RPG</span>
+                            <h4>Hogwarts Legacy</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Hogwarts Legacy', 42)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Marvel\'s Spider-Man Remastered', 35, 'Action', 'assets/images/spiderman.jpeg', 'Marvel\'s Spider-Man Remastered adalah game aksi-petualangan yang diakui secara kritis.')">
+                                <img alt="Marvel's Spider-Man Remastered" src="assets/images/spiderman.jpeg" />
+                            </a>
+                            <span class="price"><em>$48</em>$35</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Spider-Man</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Marvel\'s Spider-Man Remastered', 35)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Resident Evil 4 Remake', 40, 'Survival Horror', 'assets/images/RE4.jpeg', 'Resident Evil 4 Remake adalah versi yang dibangun kembali dari klasik survival horror.')">
+                                <img alt="Resident Evil 4 Remake" src="assets/images/RE4.jpeg" />
+                            </a>
+                            <span class="price"><em>$55</em>$40</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Survival Horror</span>
+                            <h4>Resident Evil 4 </h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Resident Evil 4 Remake', 40)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'It Takes Two', 20, 'Adventure', 'assets/images/It takes tow.jpeg', 'It Takes Two adalah game petualangan co-op unik yang hanya bisa dimainkan oleh dua pemain.')">
+                                <img alt="It Takes Two" src="assets/images/It takes tow.jpeg" />
+                            </a>
+                            <span class="price"><em>$30</em>$20</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Adventure</span>
+                            <h4>It Takes Two</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'It Takes Two', 20)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Factorio', 28, 'Simulation', 'assets/images/factorio.jpeg', 'Factorio adalah game membangun pabrik di mana Anda menambang sumber daya dan membangun jalur produksi.')">
+                                <img alt="Factorio" src="assets/images/factorio.jpeg" />
+                            </a>
+                            <span class="price"><em>$35</em>$28</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Simulation</span>
+                            <h4>Factorio</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Factorio', 28)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Sea of Thieves', 25, 'Adventure', 'assets/images/SOT.jpeg', 'Sea of Thieves adalah game petualangan dunia bersama di mana pemain menjelajahi lautan sebagai bajak laut.')">
+                                <img alt="Sea of Thieves" src="assets/images/SOT.jpeg" />
+                            </a>
+                            <span class="price"><em>$35</em>$25</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Adventure</span>
+                            <h4>Sea of Thieves</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Sea of Thieves', 25)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="#"
+                                onclick="handleProductModalClick(event, 'Crusader Kings III', 33, 'Strategy', 'assets/images/crusader.jpeg', 'Crusader Kings III adalah game strategi besar yang memungkinkan pemain memimpin dinasti abad pertengahan.')">
+                                <img alt="Crusader Kings III" src="assets/images/crusader.jpeg" />
+                            </a>
+                            <span class="price"><em>$45</em>$33</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Strategy</span>
+                            <h4>Crusader Kings III</h4>
+                            <a href="#" onclick="handleAddToCartClick(event, 'Crusader Kings III', 33)"><i
+                                    class="fa fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li><a href="Shop 2.html"> &lt; </a></li>
+                        <li><a href="shop.html">1</a></li>
+                        <li><a href="Shop 2.html">2</a></li>
+                        <li><a class="is_active" href="Shop 3.html">3</a></li>
+                        <li><a href="Shop 3.html"> &gt; </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <p>Semoga kalian menyukai web pembelanjaan kami!    <a href="https://templatemo.com" rel="nofollow"
+                        target="_blank">Selamat Menikmati</a></p>
+                <div class="social-links mt-3">
+                    <a class="mx-2" href="https://facebook.com" target="_blank"><i
+                            class="fab fa-facebook-f fa-2x text-white"></i></a>
+                    <a class="mx-2" href="https://twitter.com" target="_blank"><i
+                            class="fab fa-twitter fa-2x text-white"></i></a>
+                    <a class="mx-2" href="https://youtube.com" target="_blank"><i
+                            class="fab fa-youtube fa-2x text-white"></i></a>
+                    <a class="mx-2" href="https://instagram.com" target="_blank"><i
+                            class="fab fa-instagram fa-2x text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <div aria-hidden="true" aria-labelledby="productModalLabel" class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detail Produk</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img alt="Product Image" class="img-fluid rounded" id="modalProductImage" src="" />
+                        </div>
+                        <div class="col-md-7">
+                            <h4 id="modalProductName"></h4>
+                            <p><span class="badge bg-primary" id="modalProductCategory"></span></p>
+                            <h5 class="text-success" id="modalProductPrice"></h5>
+                            <p id="modalProductDescription"></p>
+                            <button class="btn btn-primary mt-3" id="modalAddToCartButton"><i
+                                    class="fa fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+        // Fungsi untuk menampilkan modal detail produk
+        // (Pastikan ini sesuai dengan modal yang Anda gunakan,
+        // terutama ID elemen di dalam modal)
+        function showProductModal(nama, harga, kategori, gambar, deskripsi) {
+            const productModalElement = document.getElementById('productModal');
+            if (!productModalElement) {
+                console.error("Elemen modal dengan ID 'productModal' tidak ditemukan.");
+                return;
+            }
+            const productModal = new bootstrap.Modal(productModalElement);
+
+            document.getElementById('modalProductImage').src = gambar;
+            document.getElementById('modalProductName').innerText = nama;
+            document.getElementById('modalProductCategory').innerText = kategori;
+            document.getElementById('modalProductPrice').innerText = `$${harga}`;
+            document.getElementById('modalProductDescription').innerText = deskripsi;
+
+            const modalAddToCartBtn = document.getElementById('modalAddToCartButton');
+            if (modalAddToCartBtn) {
+                // Pastikan onclick ini memanggil addToCart dengan parameter yang benar
+                modalAddToCartBtn.onclick = function () {
+                    // Jika modal juga punya input kuantitas, Anda harus ambil nilainya di sini
+                    // Misalnya: const quantity = parseInt(document.getElementById('modalQuantityInput').value);
+                    addToCart(nama, harga); // Asumsi kuantitas default 1 jika tidak ada input di modal
+                    productModal.hide();
+                };
+            }
+
+            productModal.show();
+        }
+
+        // Fungsi untuk menangani klik pada gambar/kartu produk untuk membuka modal
+        // (Ini kemungkinan digunakan di halaman shop.html atau index.html)
+        function handleProductModalClick(event, nama, harga, kategori, gambar, deskripsi) {
+            event.preventDefault(); // Mencegah lompatan ke atas halaman
+            showProductModal(nama, harga, kategori, gambar, deskripsi);
+        }
+
+        // Fungsi untuk menangani klik pada tombol 'Add to Cart' langsung di daftar produk (tanpa modal)
+        // Jika ada tombol 'Add to Cart' langsung di listing produk, bukan di modal.
+        // Jika tidak ada, fungsi ini tidak perlu ada atau pastikan tidak ada onclick yang memanggilnya.
+        function handleAddToCartClick(event, nama, harga) {
+            event.preventDefault(); // Mencegah perilaku default dari <a> (misalnya, navigasi halaman)
+            addToCart(nama, harga);
+        }
+
+    </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.body.classList.add('loaded');
+  });
+</script>
+
+</script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
